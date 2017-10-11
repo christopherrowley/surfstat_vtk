@@ -1,0 +1,3 @@
+These matlab scripts were made to load vtk files that contain data mapped to a surface created using CBS tools in MIPAV. 
+
+The sample script should help you get started. You will need to make sure that you have downloaded surfstat as well, as all functionality of this relies on Surfstat. Changes have been made to some of the surfstat scripts, so I have uploaded my version of the program. If used for research, be sure to cite the original surfstat by Worsley (http://www.math.mcgill.ca/keith/surfstat/)
