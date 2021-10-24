@@ -114,7 +114,7 @@ set(cb,'position',[0.32 0.13 0.35 0.04]); % C.R. removed capital on position
 set(cb,'XAxisLocation','bottom');
 h=get(cb,'Title');
 set(h,'String',title,'Interpreter','none');
-set(gca,'fontsize',18)
+set(gca,'fontsize',14)
 
 whitebg(gcf,background);
 set(gcf,'Color',background,'InvertHardcopy','off');
