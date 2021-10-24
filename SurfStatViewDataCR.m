@@ -110,10 +110,11 @@ end
 
 cb=colorbar('location','South');
 %set(cb,'Position',[0.35 0.085 0.3 0.03]);
-set(cb,'position',[0.34 0.15 0.3 0.03]); % C.R. removed capital on position
+set(cb,'position',[0.32 0.13 0.35 0.04]); % C.R. removed capital on position
 set(cb,'XAxisLocation','bottom');
 h=get(cb,'Title');
 set(h,'String',title,'Interpreter','none');
+set(gca,'fontsize',18)
 
 whitebg(gcf,background);
 set(gcf,'Color',background,'InvertHardcopy','off');
