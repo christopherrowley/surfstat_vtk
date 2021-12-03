@@ -14,6 +14,8 @@ for i=1:length(a)
     tag=get(a(i),'Tag');
     if strcmp(tag,'Colorbar')
         title=get(get(a(i),'Title'),'String');
+        titleColour = get(get(a(i),'Title'),'Color');
+        titleFontSize = get(get(a(i),'Title'),'fontsize');
         delete(a(i));
     end
     if length(tag)>12 & strcmp(tag(1:12),'SurfStatView')
@@ -29,10 +31,10 @@ else
     %set(cb,'Position',[0.35 0.085 0.3 0.03]);
     set(cb,'position',[0.32 0.13 0.35 0.04]); % C.R. removed capital on position
     set(cb,'XAxisLocation','bottom');
-    set(gca,'fontsize',14)
+    set(gca,'fontsize',titleFontSize,'Color',titleColour)
 end
 h=get(cb,'Title');
-set(h,'String',title);
+set(h,'String',title,'fontsize',titleFontSize,'Color',titleColour);
 
 return
 end
